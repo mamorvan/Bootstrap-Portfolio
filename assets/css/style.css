@@ -1,0 +1,51 @@
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+body {
+	color: #646464;
+	background-image: url(../images/confectionary.png);
+	margin: 0 0 50px 0;
+}
+
+.navbar-brand {
+	border: 2px #5194cc outset;
+	padding: 10px;
+	border-radius: 10%;
+	text-align: center;
+}
+
+h3, h4 {
+	padding: 20px;
+	border-bottom: 2px #dcdcdc solid;
+	margin-bottom: 20px;
+	}
+
+.main {
+	border: 2px #5194cc solid;
+	padding: 10px;
+	/*margin: 5px 5px 10px 0;*/
+}
+
+.connect {
+	border: 2px #5194cc solid;
+	padding: 10px;
+	/*margin: 5px 5px 10px 0;*/
+	text-align: center;
+}
+
+.footer {
+	height: 50px;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background-color: #DCDCDC;
+	border-top: 1px #5194cc solid;
+	font-size: 75%;
+	text-align: center;
+}
+
+#portfoliocontainer {
+	text-align: center;
+}
