@@ -3,57 +3,111 @@
 
 	<head>
 
-		<title>Basic Portfolio</title>
-		<link rel="stylesheet" href="assets/css/reset.css" type="text/css">
+		<title>Basic Portfolio Using Bootstrap</title>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<link href="https://fonts.googleapis.com/css?family=Exo+2:100i|Mukta+Vaani:600|Noto+Sans" rel="stylesheet">
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
 		<link rel="stylesheet" href="assets/css/style.css" type="text/css">
 
 	</head>
 
 	<body>
-		<div class="footer">
-			<nav>
-				<div id="logo">
-					<h1>Mary Morvan</h1>
-				</div>
-				<ul>
-					<li><a href="index.html">About</a></li>
-					<li id="portfoliolink"><a href="portfolio.html">Portfolio</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
-			</nav>
 
-			<section class="main" id="contact">
-				<h1>Contact me</h1>
-				<form>
-					<label>Name</label>
-					<input type="text" name="name" placeholder="John Smith">
+		<nav class="navbar navbar-default navbar-fixed-top">
+  			<div class="container">
 
-					<label>Email</label>
-					<input type="email" name="email" placeholder="example@gmail.com">
+   			 	<div class="navbar-header">
+      				<h1 class="navbar-brand" id="logo">Mary Morvan</h1>
+    			</div>
 
-					<label>Message</label><br>			
-					<textarea id="message"></textarea>
-					<br>
+    			<ul class="nav navbar-nav navbar-right">
+      				<li ><a href="index.html">About</a></li>
+      				<li><a href="portfolio.html">Portfolio</a></li>
+      				<li id="active"><a href="contact.html">Contact</a></li>
+    			</ul>
+   
+  			</div>
+		</nav>
 
-					<input id="submitbutton" type="submit" value="Submit">
-				</form>
-				
-			</section>
+
+		<div class="container">
+
+			<div clas="row">
+
+				<div class="col-sm-8">
+
+					<section class="main" id="contact">
+						<h2>Contact me</h2>
+
+						<form class="form-horizontal">
+
+							<div class="form-group"> <!--name-->
+	    						<label for="inputName" class="col-sm-2 control-label">Name</label>
+	    						<div class="col-sm-10">
+	      						<input type="text" class="form-control" id="inputName" placeholder="Name">
+	    						</div>
+	  						</div> <!--end of name group-->
+
+							<div class="form-group"> <!--email-->
+    							<label for="inputEmail" class="col-sm-2 control-label">Email</label>
+    							<div class="col-sm-10">
+      							<input type="email" class="form-control" id="inputEmail" placeholder="Email">
+    							</div> 
+  							</div><!-- end of email group-->
+
+							<div class="form-group"> <!--message-->
+    							<label for="message" class="col-sm-2 control-label">Message</label>
+    							<div class="col-sm-10">
+      							<textarea class="form-control" rows="5" id="message"></textarea>
+  							</div><!-- end of message group-->
+  							
+
+ 
+  							<div class="form-group"> <!--submit button group-->
+   						 		<div class="col-sm-2 col-sm-offset-6">
+      							<button type="submit" class="btn btn-default" id="submitButton">Submit</button>
+    							</div>
+  							</div> <!--end of submit button group -->
+</form>
+						
+					</section>
+				</div> <!-- end of col for main section -->
 	 
-			<aside class="connect">
-				<h3>Connect with me</h3>
-				<div id="icons">
-					<a href="https://github.com/mamorvan"><img src="assets/images/github.png" alt="GitHub" width="50"></a>
-					<a href="https://www.linkedin.com/in/mary-morvan"><img src="assets/images/linkedin.png" alt="LinkedIn" width="50"></a>
-					<a href="http://stackoverflow.com/users/7221910/m-morvan"><img src="assets/images/Stack Overflow.png" alt="Stack Overflow" width="50"></a>
-				</div>
-			</aside>
+	 			<div class="col-sm-4">
+
+					<aside class="connect">
+						<h3>Connect with me</h3>
+						<div id="icons">
+							<a href="https://github.com/mamorvan"><img src="assets/images/github.png" alt="GitHub" width="50"></a>
+							<a href="https://www.linkedin.com/in/mary-morvan"><img src="assets/images/linkedin.png" alt="LinkedIn" width="50"></a>
+							<a href="http://stackoverflow.com/users/7221910/m-morvan"><img src="assets/images/Stack Overflow.png" alt="Stack Overflow" width="50"></a>
+						</div>
+					</aside>
+
+				</div> <!-- end of col for aside -->
+
+			</div> <!-- end of row 1 -->
+
+		</div> <!--end of container for main and connect-->
+	
+
+		<div class="container-fluid footer">
+			<footer>
+				<p>&copy; Copyright 2017 Mary Morvan</p>
+			</footer>
 		</div>
 
-		<div class="push">
-		<footer class="footer">
-			<p>&copy; Copyright 2017 Mary Morvan</p>
-		</footer>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 
 	</body>
 

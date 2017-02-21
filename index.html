@@ -7,6 +7,8 @@
 		
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+		<link href="https://fonts.googleapis.com/css?family=Exo+2:100i|Mukta+Vaani:600|Noto+Sans" rel="stylesheet">
+
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -20,15 +22,15 @@
 	<body>
 
 	<!-- add toggle bar to all pages-->
-		<nav class="navbar navbar-default">
+		<nav class="navbar navbar-default navbar-fixed-top">
   			<div class="container">
 
    			 	<div class="navbar-header">
-      				<a class="navbar-brand" href="#">Mary Morvan</a>
+      				<h1 id="logo" class="navbar-brand">Mary Morvan</h1>
     			</div>
 
     			<ul class="nav navbar-nav navbar-right">
-      				<li class="active"><a href="index.html">About</a></li>
+      				<li id="active"><a href="index.html">About</a></li>
       				<li><a href="portfolio.html">Portfolio</a></li>
       				<li><a href="contact.html">Contact</a></li>
     			</ul>
@@ -46,25 +48,27 @@
 				<div class="col-sm-8">
 					<section class="main" id="about">
 						
-						<h3>About Me</h3>
+						<h2>About Me</h2>
 
 						<div class="row">
+
 							<div class="col-md-4">
-								<img id="profilepic" src="assets/images/Profilepic.jpg" alt="profile pic" width="200" height="200">
-							</div>
+								<img id="profilePic" class="img-circle" src="assets/images/Profilepic.jpg" alt="profile pic" width="200" height="200">
+							</div> <!-- end of col for profile pic -->
+							
 							<div class="col-md-8">
 								<p>Hello, I'm Mary.<br><br>I like working on all kinds of projects and learning new things all the time. Some of the things I have learned on my own or by taking classes in the last several years are yoga, knitting, PMI CAPM certification, Swedish, state licensure as a Literacy Specialist and a bunch of other stuff. This is my first portfolio for myself. I have made a practice portfolio for Catwoala, an imaginary character created by my daughter. You can see it in my portfolio.<br><br>It's a work in progress.</p>
-							</div>
-						</div>
+							</div> <!-- end of col for about text -->
+						</div> <!-- end of row 2- within main section -->
 
 					</section>
 
-				</div>
+				</div> <!--end of col for main section -->
 
 
 				<div class="col-sm-4">
 					<aside class="connect">
-						<h4>Connect with me</h4>
+						<h3>Connect with me</h3>
 						<div id="icons">
 							<a href="https://github.com/mamorvan"><img src="assets/images/github.png" alt="GitHub" width="50"></a>
 							<a href="https://www.linkedin.com/in/mary-morvan"><img src="assets/images/linkedin.png" alt="LinkedIn" width="50"></a>

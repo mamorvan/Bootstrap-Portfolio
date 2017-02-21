@@ -4,6 +4,8 @@
     <head>
         <title>Basic Portfolio Using Bootstrap</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link href="https://fonts.googleapis.com/css?family=Exo+2:100i|Mukta+Vaani:600|Noto+Sans" rel="stylesheet">
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <!-- Optional theme -->
@@ -12,74 +14,86 @@
     </head>
 
     <body>
-        <nav class="navbar navbar-default">
+        <nav  id="navbar" class="navbar navbar-default navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="#">Mary Morvan</a>
+                    <h1 id="logo" class="navbar-brand">Mary Morvan</h1>
                 </div>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="index.html">About</a></li>
-                    <li class="active"><a href="portfolio.html">Portfolio</a></li>
+                    <li id="active"><a href="portfolio.html">Portfolio</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
         </nav>
 
         <div class="container">
+
             <div class="row">
+
+                <div class="col-sm-8">
              	
-                <section class="main col-md-8" id="portfolio">
-                    <h3>Portfolio</h3>
-                   	<div class="row" id="portfoliocontainer">
-                            <div class="col-sm-6">
-                                <a href="http://opanstest1.cloudapp.net/">
+                    <section class="main" id="portfolio">
+                        <h2>Portfolio</h2>
+                       	<div class="row">
+                                <div class="col-md-6"> <!-- col 1 of portfolio images -->
+                                    <a href="http://opanstest1.cloudapp.net/">
+                                        <div class="image">
+                                            <img class="img-responsive center-block" src="assets/images/Opans.png" alt="Opans landing page" width="250" height="200">
+                                            <h4>Opans landing page</h4>
+                                        </div>
+                                    </a>
+                                    <a href="https://codepen.io/mamorvan/pen/ORPaJw">
+                                        <div class="image">
+                                            <img class="img-responsive center-block" src="assets/images/Catwoala's portfolio.png" alt="Catwoala's portfolio" width="250" height="200">
+                                            <h4>Catwoala's Portfolio</h4>
+                                        </div>
+                                    </a>
                                     <div class="image">
-                                        <img src="assets/images/Opans.png" alt="Opans landing page" width="250" height="200">
-                                        <p>Opans landing page</p>
+                                        <img class="img-responsive center-block"  src="assets/images/Catwoala.jpeg" alt="placeholder" width="250" height="200">
+                                        <h4>another Catwoala placeholder</h4>
                                     </div>
-                                </a>
-                                <a href="https://codepen.io/mamorvan/pen/ORPaJw">
+                                    
+                                </div><!-- end col 1 of images -->
+
+                                <div class="col-md-6">
+                                <!-- col 2 of portfolio images -->
+                                    <a href="http://79.170.40.227/butterfield2017.com/">
+                                        <div class="image">
+                                            <img class="img-responsive center-block" src="assets/images/Reunion.png" alt="family reunion" width="250" height="200">
+                                            <h4>Family Reunion Website</h4>
+                                        </div>
+                                    </a>
+                                    <a href="https://codepen.io/mamorvan/pen/dOpwLq">
+                                        <div class="image">
+                                            <img class="img-responsive center-block" src="assets/images/quote generator.png" alt="quote generator" width="250" height="200">
+                                            <h4>Random Quote Generator</h4>
+                                        </div>
+                                    </a>
                                     <div class="image">
-                                        <img src="assets/images/Catwoala's portfolio.png" alt="Catwoala's portfolio" width="250" height="200">
-                                        <p>Catwoala's Portfolio</p>
+                                        <img class="img-responsive center-block" src="assets/images/Catwoala.jpeg" alt="placeholder" width="250" height="200">
+                                        <h4>This is a Catwoala placeholder</h4>
                                     </div>
-                                </a>
-                                <a href="https://codepen.io/mamorvan/pen/dOpwLq">
-                                    <div class="image">
-                                        <img src="assets/images/quote generator.png" alt="quote generator" width="250" height="200">
-                                        <p>Random Quote Generator</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <!-- col 1 of images -->
-                            <div class="col-sm-6">
-                                <a href="http://79.170.40.227/butterfield2017.com/">
-                                    <div class="image">
-                                        <img src="assets/images/Reunion.png" alt="family reunion" width="250" height="200">
-                                        <p>Family Reunion Website</p>
-                                    </div>
-                                </a>
-                                <div class="image">
-                                    <img src="assets/images/Catwoala.jpeg" alt="placeholder" width="250" height="200">
-                                    <p>This is a Catwoala placeholder</p>
-                                </div>
-                                <div class="image">
-                                    <img src="assets/images/Catwoala.jpeg" alt="placeholder" width="250" height="200">
-                                    <p>another Catwoala placeholder</p>
-                                </div>
-                            </div>
-                            <!-- col 2 of images -->
-                    </div><!-- end portfolio container row 2-->
-                </section>  <!-- end image row-->
-                
-                <aside class="col-md-4 connect">
-                    <h4>Connect with me</h4>
-                    <div id="icons">
-                        <a href="https://github.com/mamorvan"><img src="assets/images/github.png" alt="GitHub" width="50"></a>
-                        <a href="https://www.linkedin.com/in/mary-morvan"><img src="assets/images/linkedin.png" alt="LinkedIn" width="50"></a>
-                        <a href="http://stackoverflow.com/users/7221910/m-morvan"><img src="assets/images/Stack Overflow.png" alt="Stack Overflow" width="50"></a>
-                    </div>
-                </aside><!--end of connect column -->
+                                    
+
+                                </div><!-- end col 2 of images -->
+
+                        </div><!-- end portfolio container row 2-->
+                    </section>  <!-- end image row-->
+                </div> <!--end of col for main section -->
+
+                <div class="col-sm-4">
+
+                    <aside class="connect">
+                        <h3>Connect with me</h3>
+                        <div id="icons">
+                            <a href="https://github.com/mamorvan"><img src="assets/images/github.png" alt="GitHub" width="50"></a>
+                            <a href="https://www.linkedin.com/in/mary-morvan"><img src="assets/images/linkedin.png" alt="LinkedIn" width="50"></a>
+                            <a href="http://stackoverflow.com/users/7221910/m-morvan"><img src="assets/images/Stack Overflow.png" alt="Stack Overflow" width="50"></a>
+                        </div>
+                    </aside><!--end of connect column -->
+
+                </div> <!-- end of col for aside -->
             </div><!--end of row 1 -->
         </div> <!-- end of container -->
 
