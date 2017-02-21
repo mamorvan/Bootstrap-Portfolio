@@ -49,21 +49,23 @@ h2, h3 {
 	margin: 10px 0;
 	background-color: #d1d9df;
 	border: 2px #5a88d2 solid;
-	padding: 10px 20px 20px 20px;
+	padding: 10px 15px 20px 15px;
 	text-align: center;
 }
 
-.footer {
+footer {
 	padding-top: 5px;
 	height: 50px;
 	position: absolute;
 	bottom: 0;
+	left: 0;
 	width: 100%;
 	background-color: #5a88d2;
 	font-size: 75%;
 	color: #d1d9df;
 	text-align: center;
 }
+
 
 /* portfolio page */
 
@@ -119,8 +121,6 @@ h2, h3 {
 .hovereffect:hover .overlay {
 	opacity: 1;
 }
-
-
 
 
 /*contact page*/
